@@ -3,7 +3,7 @@
         "frontend": {
             "entrypoint": "frontend",
             "routePrefix": "/",
-            "framework": null
+            "framework": "other"
         },
         "backend": {
             "entrypoint": "backend",
