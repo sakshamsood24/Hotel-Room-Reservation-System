@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Hotel Room Reservation System Frontend",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
+    "start": "echo 'No start script needed'",
+    "build": "mkdir -p build && cp index.html build/"
   },
   "dependencies": {
     "react": "^18.2.0",
