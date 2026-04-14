@@ -2,8 +2,7 @@
     "experimentalServices": {
         "frontend": {
             "entrypoint": "frontend",
-            "routePrefix": "/",
-            "framework": "other"
+            "routePrefix": "/"
         },
         "backend": {
             "entrypoint": "backend",
