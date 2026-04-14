@@ -232,6 +232,11 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'OK' });
 });
 
-app.listen(PORT, () => {
-  console.log(`Hotel Reservation API running on http://localhost:${PORT}`);
-});
+// For local development
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`Hotel Reservation API running on http://localhost:${PORT}`);
+  });
+}
+
+module.exports = app;

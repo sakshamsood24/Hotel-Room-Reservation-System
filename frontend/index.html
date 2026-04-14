@@ -329,7 +329,9 @@
   </div>
 
   <script>
-    const API_BASE = 'http://localhost:5001/api';
+    const API_BASE = window.location.origin === 'http://localhost:3000' || window.location.origin.includes('localhost')
+      ? 'http://localhost:5001/api' 
+      : '/api';
 
     async function fetchRooms() {
       try {
